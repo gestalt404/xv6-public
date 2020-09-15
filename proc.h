@@ -49,7 +49,7 @@ struct proc {
   struct file *ofile[NOFILE];  // Open files
   struct inode *cwd;           // Current directory
   char name[16];               // Process name (debugging)
-  int syscall_frequency[22]	   // indicates the frequency of each system call
+  int syscall_frequency[22];	   // indicates the frequency of each system call
 };
 
 // Process memory is laid out contiguously, low addresses first:
